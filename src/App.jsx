@@ -9,8 +9,8 @@ function App() {
   return (
     <ArticlesProvider>
       
-      <Header />
-      <Form />
+      <Header/>
+      <Form  />
       <ListArticles />
       
       
