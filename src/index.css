@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-select option[value="music"] {
-    display: none;
-}
