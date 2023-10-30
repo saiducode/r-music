@@ -5,20 +5,25 @@ const ArticlesContext = createContext();
 const ArticlesProvider = ({children}) => {
     const [topic, setTopic] = useState('music')
     const [articles, setArticles] = useState([])
-
+    
     useEffect(() => {
         const callAPI = async () => {
             const url = `https://www.reddit.com/r/${topic}.json`
 
             const {data} = await axios(url)
+            
             setArticles(data.data.children)
+            
+            
         }
         callAPI()
     }, [topic])
 
+
     const handleChangeTopic = e => {
         setTopic(e.target.value)
     }
+
 
     return(
         <ArticlesContext.Provider
@@ -26,6 +31,7 @@ const ArticlesProvider = ({children}) => {
                 topic,
                 handleChangeTopic,
                 articles
+                
             }}
         >
          {children}

@@ -23,7 +23,7 @@ const Article = ({article}) => {
               <span className="font-normal text-xs normal-case bg-gray-900 text-white p-1 rounded-md">{link_flair_text}</span>
           </p>
         </a> 
-          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
         
           
           <p className="font-light mb-3 text-gray-800 text-sm">
@@ -33,7 +33,7 @@ const Article = ({article}) => {
           {
             secure_media !== null &&
             <div className="mb-5 h-52 w-96">
-              <iframe src={secure_media_embed.media_domain_url} allowfullscreen className="h-14 min-h-full w-36 min-w-full max-w-xl aspect-video"></iframe>
+              <iframe src={secure_media_embed.media_domain_url} allowFullScreen className="h-14 min-h-full w-36 min-w-full max-w-xl aspect-video"></iframe>
             </div>
           }
           

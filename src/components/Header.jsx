@@ -24,7 +24,7 @@ function Header() {
             </div>
             
         </div>
-        <hr class="h-px my-8 bg-orange-500 border-0 dark:bg-gray-700 ml-5 mr-5"/>
+        <hr className="h-px my-8 bg-orange-500 border-0 dark:bg-gray-700 ml-5 mr-5"/>
     </>    
     )
 }
